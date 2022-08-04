@@ -1,0 +1,37 @@
+
+const pointList = [
+  {id:'xxx',x:1,y:2,h:3,w:4,th:0,ty:7,tImg:'xxx',detail:{t:'',image:''},c1:'dyjs',c2:''},
+  {id:'xxx',x:1,y:2,h:3,w:4,th:0,ty:7,id:'xxx',tImg:'xxx',detail:{t:'',image:''}},
+  {id:'xxx',x:1,y:2,h:3,w:4,th:0,ty:7,id:'xxx',tImg:'xxx',detail:{t:'',image:''}},
+  {id:'xxx',x:1,y:2,h:3,w:4,th:0,ty:7,id:'xxx',tImg:'xxx',detail:{t:'',image:''}},
+  {id:'xxx',x:1,y:2,h:3,w:4,th:0,ty:7,id:'xxx',tImg:'xxx',detail:{t:'',image:''}},
+]
+
+
+let p = pointList[0]
+
+function formatStyle(p){
+  let style=''  style += 'height:' + p.h + 'rpx'   
+style += ''
+  return style
+
+}
+
+
+let pl = pointList.filter()
+
+
+
+let pointList = pointList.map(p=>{
+  let style = formatStyle(p)
+  return {
+    style,
+    tImg:p.tImg,
+    detail:p.detail,
+    id:p.id
+  }
+})
+
+
+//引入该文件就会启用
+// fs.init((t,f)=>{return t,f})
